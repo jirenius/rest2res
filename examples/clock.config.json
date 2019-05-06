@@ -1,0 +1,14 @@
+{
+	"natsUrl": "nats://127.0.0.1:4222",
+	"fullAccess": true,
+	"serviceName": "clock",
+	"endpoints": [
+		{
+			"url": "http://worldclockapi.com/api/json/${timezone}/now",
+			"refreshTime": 5000,
+			"refreshCount": 6,
+			"type": "model",
+			"pattern": "$timezone.now"
+		}
+	]
+}
